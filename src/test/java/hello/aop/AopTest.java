@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Import;
 
 import hello.aop.order.OrderRepository;
 import hello.aop.order.OrderService;
-import hello.aop.order.aop.AspectV2;
+import hello.aop.order.aop.AspectV3;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -24,7 +24,8 @@ import lombok.extern.slf4j.Slf4j;
  * ref : "스프링 핵심 원리 - 고급편" -> "스프링 AOP 구현" -> "스프링 AOP 구현1 - 시작" 5:10초
  */
 //@Import(AspectV1.class)
-@Import(AspectV2.class)
+//@Import(AspectV2.class)
+@Import(AspectV3.class)
 public class AopTest {
 
     @Autowired
